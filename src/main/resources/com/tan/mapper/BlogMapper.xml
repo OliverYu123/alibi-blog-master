@@ -1,0 +1,37 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace = "com.tan.mapper.BlogMapper">
+
+    <resultMap id="INDEX_CONTENT_SQL" type="com.tan.pojo.IndexInfoVO">
+        <result column="id" property="id"/>
+        <result column="content" property="content"/>
+        <result column="createTime" property="createTime"/>
+        <result column="firstPicture" property="firstPicture"/>
+        <result column="title" property="title"/>
+        <result column="tagName" property="tagName"/>
+        <result column="managerName" property="managerName"/>
+    </resultMap>
+
+
+    <select id="getContent" resultMap="INDEX_CONTENT_SQL">
+        select tb.id as id
+             ,tb.content as content
+             ,tb.create_time as createTime
+             ,tb.first_picture as firstPicture
+             ,tb.title as title
+             ,tt.name as tagName
+             ,tm.username as managerName
+        from t_blog tb,t_type tt,t_manager tm
+        where tb.type_id = tt.id and tb.manager_id = tm.id
+    </select>
+
+    <select id="getTags" resultType="java.lang.String">
+        select name from  t_tag
+    </select>
+
+<!--    获取文章总篇数-->
+    <select id="getContentCount" resultType="java.lang.Integer">
+        select count(*) from t_blog
+    </select>
+
+</mapper>

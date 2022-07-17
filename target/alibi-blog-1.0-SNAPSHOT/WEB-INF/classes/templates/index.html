@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>首页</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.css">
+  <link rel="stylesheet" th:href="@{/css/typo.css}">
+  <link rel="stylesheet" th:href="@{/css/animate.css}">
+  <link rel="stylesheet" th:href="@{/lib/prism/prism.css}">
+  <link rel="stylesheet" th:href="@{/lib/tocbot/tocbot.css}">
+  <link rel="stylesheet" th:href="@{/css/me.css}">
+  <link rel="stylesheet" th:href="@{/css/APlayer.min.css}">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="/static/js/index.js"></script>
+</head>
+<body>
+
+  <!--导航-->
+  <nav  th:replace="~{fragements::top(n=1)}"></nav>
+  <!--中间内容-->
+  <div  class="m-container-big m-padded-tb-big">
+    <div class="ui container">
+      <div class="ui stackable grid">
+        <!--左边博客列表-->
+        <div class="eleven wide column">
+          <!--header-->
+          <div class="ui top attached segment">
+            <div class="ui middle aligned two column grid">
+              <div class="column">
+                <h3 class="ui blue header">博客</h3>
+              </div>
+              <div class="right aligned column">
+                共 <h2  class="ui orange header m-inline-block m-text-thin"></h2> 篇
+              </div>
+            </div>
+          </div>
+          <!--文本内容-->
+          <div class="ui segment">
+            <div class="ui divided items bg-white">
+              <div class="item">
+                <div class="image">
+                  <img src="/images/wireframe/image.png">
+                </div>
+                <div class="content">
+                  <a class="header" _msthash="2525380" _msttexthash="8716799">12年为奴</a>
+                  <div class="meta">
+                    <span class="cinema" _msthash="2683096" _msttexthash="10975146">联合广场 14</span>
+                  </div>
+                  <div class="description">
+                    <p></p>
+                  </div>
+                  <div class="extra">
+                    <div class="ui label" _msthash="3168035" _msttexthash="33696">IMAX</div>
+                    <div class="ui label"><i class="globe icon"></i><font _mstmutation="1" _msthash="3168178" _msttexthash="12780339">其他语言</font></div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="image">
+                  <img src="/images/wireframe/image.png">
+                </div>
+                <div class="content">
+                  <a class="header" _msthash="2525653" _msttexthash="23287511">我的邻居龙猫</a>
+                  <div class="meta">
+                    <span class="cinema" _msthash="2683395" _msttexthash="38616838">国际金融中心电影院</span>
+                  </div>
+                  <div class="description">
+                    <p></p>
+                  </div>
+                  <div class="extra">
+                    <div class="ui label" _msthash="3168555" _msttexthash="6402227">有限</div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="image">
+                  <img src="/images/wireframe/image.png">
+                </div>
+                <div class="content">
+                  <a class="header" _msthash="2525926" _msttexthash="7736417">看守 员</a>
+                  <div class="meta">
+                    <span class="cinema" _msthash="2683694" _msttexthash="21239946">国际金融公司</span>
+                  </div>
+                  <div class="description">
+                    <p></p>
+                  </div>
+                  <div class="extra">
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="image">
+                  <img src="/images/wireframe/image.png">
+                </div>
+                <div class="content">
+                  <a class="header" _msthash="2525380" _msttexthash="8716799">12年为奴</a>
+                  <div class="meta">
+                    <span class="cinema" _msthash="2683096" _msttexthash="10975146">联合广场 14</span>
+                  </div>
+                  <div class="description">
+                    <p></p>
+                  </div>
+                  <div class="extra">
+                    <div class="ui label" _msthash="3168035" _msttexthash="33696">IMAX</div>
+                    <div class="ui label"><i class="globe icon"></i><font _mstmutation="1" _msthash="3168178" _msttexthash="12780339">其他语言</font></div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="image">
+                  <img src="/images/wireframe/image.png">
+                </div>
+                <div class="content">
+                  <a class="header" _msthash="2525380" _msttexthash="8716799">12年为奴</a>
+                  <div class="meta">
+                    <span class="cinema" _msthash="2683096" _msttexthash="10975146">联合广场 14</span>
+                  </div>
+                  <div class="description">
+                    <p></p>
+                  </div>
+                  <div class="extra">
+                    <div class="ui label" _msthash="3168035" _msttexthash="33696">IMAX</div>
+                    <div class="ui label"><i class="globe icon"></i><font _mstmutation="1" _msthash="3168178" _msttexthash="12780339">其他语言</font></div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="image">
+                  <img src="/images/wireframe/image.png">
+                </div>
+                <div class="content">
+                  <a class="header" _msthash="2525380" _msttexthash="8716799">12年为奴</a>
+                  <div class="meta">
+                    <span class="cinema" _msthash="2683096" _msttexthash="10975146">联合广场 14</span>
+                  </div>
+                  <div class="description">
+                    <p></p>
+                  </div>
+                  <div class="extra">
+                    <div class="ui label" _msthash="3168035" _msttexthash="33696">IMAX</div>
+                    <div class="ui label"><i class="globe icon"></i><font _mstmutation="1" _msthash="3168178" _msttexthash="12780339">其他语言</font></div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="image">
+                  <img src="/images/wireframe/image.png">
+                </div>
+                <div class="content">
+                  <a class="header" _msthash="2525380" _msttexthash="8716799">12年为奴</a>
+                  <div class="meta">
+                    <span class="cinema" _msthash="2683096" _msttexthash="10975146">联合广场 14</span>
+                  </div>
+                  <div class="description">
+                    <p></p>
+                  </div>
+                  <div class="extra">
+                    <div class="ui label" _msthash="3168035" _msttexthash="33696">IMAX</div>
+                    <div class="ui label"><i class="globe icon"></i><font _mstmutation="1" _msthash="3168178" _msttexthash="12780339">其他语言</font></div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="image">
+                  <img src="/images/wireframe/image.png">
+                </div>
+                <div class="content">
+                  <a class="header" _msthash="2525380" _msttexthash="8716799">12年为奴</a>
+                  <div class="meta">
+                    <span class="cinema" _msthash="2683096" _msttexthash="10975146">联合广场 14</span>
+                  </div>
+                  <div class="description">
+                    <p></p>
+                  </div>
+                  <div class="extra">
+                    <div class="ui label" _msthash="3168035" _msttexthash="33696">IMAX</div>
+                    <div class="ui label"><i class="globe icon"></i><font _mstmutation="1" _msthash="3168178" _msttexthash="12780339">其他语言</font></div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="image">
+                  <img src="/images/wireframe/image.png">
+                </div>
+                <div class="content">
+                  <a class="header" _msthash="2525380" _msttexthash="8716799">12年为奴</a>
+                  <div class="meta">
+                    <span class="cinema" _msthash="2683096" _msttexthash="10975146">联合广场 14</span>
+                  </div>
+                  <div class="description">
+                    <p></p>
+                  </div>
+                  <div class="extra">
+                    <div class="ui label" _msthash="3168035" _msttexthash="33696">IMAX</div>
+                    <div class="ui label"><i class="globe icon"></i><font _mstmutation="1" _msthash="3168178" _msttexthash="12780339">其他语言</font></div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="image">
+                  <img src="/images/wireframe/image.png">
+                </div>
+                <div class="content">
+                  <a class="header" _msthash="2525380" _msttexthash="8716799">12年为奴</a>
+                  <div class="meta">
+                    <span class="cinema" _msthash="2683096" _msttexthash="10975146">联合广场 14</span>
+                  </div>
+                  <div class="description">
+                    <p></p>
+                  </div>
+                  <div class="extra">
+                    <div class="ui label" _msthash="3168035" _msttexthash="33696">IMAX</div>
+                    <div class="ui label"><i class="globe icon"></i><font _mstmutation="1" _msthash="3168178" _msttexthash="12780339">其他语言</font></div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="image">
+                  <img src="/images/wireframe/image.png">
+                </div>
+                <div class="content">
+                  <a class="header" _msthash="2525380" _msttexthash="8716799">12年为奴</a>
+                  <div class="meta">
+                    <span class="cinema" _msthash="2683096" _msttexthash="10975146">联合广场 14</span>
+                  </div>
+                  <div class="description">
+                    <p></p>
+                  </div>
+                  <div class="extra">
+                    <div class="ui label" _msthash="3168035" _msttexthash="33696">IMAX</div>
+                    <div class="ui label"><i class="globe icon"></i><font _mstmutation="1" _msthash="3168178" _msttexthash="12780339">其他语言</font></div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="image">
+                  <img src="/images/wireframe/image.png">
+                </div>
+                <div class="content">
+                  <a class="header" _msthash="2525380" _msttexthash="8716799">12年为奴</a>
+                  <div class="meta">
+                    <span class="cinema" _msthash="2683096" _msttexthash="10975146">联合广场 14</span>
+                  </div>
+                  <div class="description">
+                    <p></p>
+                  </div>
+                  <div class="extra">
+                    <div class="ui label" _msthash="3168035" _msttexthash="33696">IMAX</div>
+                    <div class="ui label"><i class="globe icon"></i><font _mstmutation="1" _msthash="3168178" _msttexthash="12780339">其他语言</font></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+
+
+
+        <!--右边的top-->
+        <div class="five wide column">
+
+          <!--分类-->
+          <div class="ui segments">
+            <div class="ui secondary segment">
+              <div class="ui two column grid">
+                <div class="column">
+                  <i class="idea icon"></i>分类
+                </div>
+                <div class="right aligned column">
+                  <a target="_blank">more <i class="angle double right icon"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="ui blue teal segment small">
+              <div  class="ui fluid vertical menu">
+                <a target="_blank" class="item">
+                  <span></span>
+                  <div class="ui teal basic left pointing label"></div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!--标签-->
+          <div class="ui segments m-margin-top-large">
+            <div class="ui secondary segment">
+              <div class="ui two column grid">
+                <div class="column">
+                  <i class="tags icon"></i>标签
+                </div>
+                <div class="right aligned column">
+                  <a   target="_blank">more <i class="angle double right icon"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="ui blue segment">
+              <a target="_blank" class="ui teal basic left pointing label m-margin-tb-tiny">
+                <span ></span> <div class="detail">1</div>
+              </a>
+              <a target="_blank" class="ui teal basic left pointing label m-margin-tb-tiny">
+                <span ></span> <div class="detail">2</div>
+              </a>
+              <a target="_blank" class="ui teal basic left pointing label m-margin-tb-tiny">
+                <span ></span> <div class="detail">3</div>
+              </a>
+              <a target="_blank" class="ui teal basic left pointing label m-margin-tb-tiny">
+                <span ></span> <div class="detail">4</div>
+              </a>
+            </div>
+          </div>
+
+          <!--最新推荐-->
+          <div class="ui segments m-margin-top-large">
+            <div class="ui secondary segment ">
+              <i class="bookmark icon"></i>最新推荐
+            </div>
+            <div class="ui segment" >
+              <a  target="_blank" class="m-black m-text-thin"></a>
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <!--底部footer-->
+  <div th:replace="~{fragements::foot}"></div>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+  <script src="https://cdn.bootcss.com/semantic-ui/2.4.1/semantic.min.js"></script>
+  <script type="text/javascript" charset="utf-8"  th:src="@{/js/L2Dwidget.min.js/}"></script>
+  <script type="text/javascript" charset="utf-8"  th:src="@{/js/L2Dwidget0.min.js/}"></script>
+  <script th:src="@{/js/APlayer.min.js}"></script>
+  <script>
+    $('.menu.toggle').click(function () {
+      $('.m-item').toggleClass('m-mobile-hide');
+    });
+  </script>
+  <script>
+    const ap = new APlayer({
+      container: document.getElementById('player'),
+      autoplay: true,
+      theme: '#FADFA3',
+      loop: 'all',
+      preload: 'auto',
+      volume: 0.3,
+      mutex: true,
+      listFolded: true,
+      listMaxHeight: 90,
+      lrcType: 3,
+      audio: [
+        {
+          name: '眠りの森 ',
+          artist: 'Aimer / Yuuki Ozaki',
+          url: 'http://music.163.com/song/media/outer/url?id=29095828.mp3',
+          cover: '/images/mian.jpg',
+          lrc: '/lrc/mian.lrc',
+          theme: '#ebd0c2'
+        },
+        {
+          /*
+          * http://music.163.com/song/media/outer/url?id={}.mp3 方式获取外链
+          * */
+          name: 'Other Side',
+          artist: '雅-MIYAVI-',
+          url: 'http://music.163.com/song/media/outer/url?id=1378406180.mp3',
+          cover: '/images/side.jpg',
+          lrc: '/lrc/side.lrc',
+          theme: '#46718b'
+        }
+      ]
+    });
+  </script>
+  <script type="text/javascript">
+    L2Dwidget.init({
+      "model": {
+        jsonPath: "https://unpkg.com/live2d-widget-model-z16@1.0.5/assets/z16.model.json",
+        "scale": 1
+      },
+      "display": {
+        "superSample": 5,
+        "width": 200,
+        "height": 400,
+        "position": "right",
+        "hOffset": 10,
+        "vOffset": -28
+      }
+    });
+  </script>
+
+</body>
+</html>
