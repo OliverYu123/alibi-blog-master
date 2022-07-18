@@ -3,6 +3,7 @@ $("body").ready(function (){
     getTags();
     getContentCount();
 })
+
 //页面加载查询文章内容
 function getContent(){
     $.get({

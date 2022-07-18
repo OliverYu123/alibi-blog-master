@@ -12,7 +12,6 @@
         <result column="managerName" property="managerName"/>
     </resultMap>
 
-
     <select id="getContent" resultMap="INDEX_CONTENT_SQL">
         select tb.id as id
              ,tb.content as content

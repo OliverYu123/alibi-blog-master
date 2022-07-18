@@ -11,6 +11,9 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
  * 重定向跳转页面
  * */
 
+
+
+
 @Configuration
 public class MyMvcConfig implements WebMvcConfigurer {
 

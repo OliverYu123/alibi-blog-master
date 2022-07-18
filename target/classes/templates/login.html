@@ -35,6 +35,7 @@
 
 				<!-- /index.html(l=zh_cn), thymeleaf传参，国际化请求 -->
 				<!-- 此处需要加上''号 -->
+				<!-- 不可直接跳转login，需要进行重定向由index进行跳转 -->
 				<a class="btn btn-sm" th:href="@{/index.html(l='zh_CN')}">中文</a>
 				<a class="btn btn-sm" th:href="@{/index.html(l='en_US')}">English</a>
 				<a class="btn btn-sm" th:href="@{/index.html(l='ja_JP')}">日本语</a>
